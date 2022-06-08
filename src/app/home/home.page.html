@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Bloquear pantalla
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row>
+      <!--Texto informativo-->
+      <ion-col size="12">
+        <ion-text>No puedes cambiar la orientacion hasta que no pulses este boton</ion-text> 
+      </ion-col>
+      <!--Boton para desbloquear la pantalla-->
+      <ion-col size="12">
+        <ion-button (click)="unlockScreen()">Desbloquear</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
